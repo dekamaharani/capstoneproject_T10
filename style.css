@@ -334,6 +334,11 @@ body {
   right: 10px;
 }
 
+#product1 .product .cart:hover{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+  }
+
 #banner{
   display: flex;
   flex-direction: column;
