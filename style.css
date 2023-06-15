@@ -49,7 +49,7 @@ p {
 }
 
 .section-p1 {
-  padding: 40px 90px;
+  padding: 40px 80px;
 }
 
 .section-m1 {
@@ -109,19 +109,19 @@ body {
   left: 0;
 }
 
-#navbar{
+.navbar{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#navbar li{
+.navbar li{
   list-style: none;
   padding: 0 20px;
   position: relative;
 }
 
-#navbar li a{
+.navbar li a{
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
@@ -129,20 +129,13 @@ body {
   transition: 0.3s ease;
 }
 
-#navbar li a:hover,
-#navbar li a.active{
+.navbar li a:hover,
+.navbar li a.active{
   color: var(--main-color);
 }
 
-#mobile{
-  display: none;
-  align-items: center;
-}
-#close{
-  display: none;
-}
-#navbar li a.active::after,
-#navbar li a:hover::after{
+.navbar li a.active::after,
+.navbar li a:hover::after{
   content: "";
   width: 30%;
   height: 2px;
@@ -341,6 +334,11 @@ body {
   right: 10px;
 }
 
+#product1 .product .cart:hover{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+  }
+
 #banner{
   display: flex;
   flex-direction: column;
@@ -490,7 +488,7 @@ body {
   display: flex;
   width: 40%;
 
-}
+  }
 #newsletter input{
   height: 3.125rem;
   padding: 0 1.25rem;
@@ -512,11 +510,11 @@ footer{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-footer .col{
+footer col{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 footer .logo{
 margin-bottom: 30px;
@@ -558,136 +556,43 @@ footer .copyright{
 width: 100%;
 text-align: center;
 }
-@media (max-width:799px) {
-  .section-p1{
-    padding: 100px 100px;
-  }
-  #navbar{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: fixed;
-    top: 0;
-    right: -300px;
-    height: 100vh;
-    width: 300px;
-    background-color: var(--bg-color);
-    box-shadow: 0 40px 60px rgba(0, 0, 0, 01);
-    padding: 80px 0 0 10px;
-    transition: 0.3s;
-  }
-  #navbar.active{
-    right: 0px;
-  }
-  #navbar li{
-     margin-bottom: 25px;
-  }
-  #mobile{
-    display: flex;
-    align-items: center;
-  }
-  #mobile i{
-    color: black;
-    font-size: 24px;
-    padding-left: 20px;
-  }
-  #close{
-    display: initial;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    color: #222;
-    font-size: 24px;
-  }
-  #lg-bag{
-    display: none;
-  }
 
-  #hero{
-    height: 70vh;
-    padding: 0 80px;
-    background-position: top 30% right 30%;
-  }
-  #feature{
-    justify-content: center;
-  }
-  #feature .fe-box{
-    margin: 15px 15px;
-  }
-  #product1 .pro-container{
-    justify-content: center;
-  }
-  #product1 .pro{
-    margin: 25px;
-  }
-  #banner{
-    height: 20vh;
-  }
-  #sm-banner .banner-box{
-    min-width: 100%;
-    height: 30vh;
-  }
-  #banner3{
-    padding: 0 40px;
-  }
-  #banner3 .banner-box{
-    width: 28%;
-  }
-  #newsletter .form{
-    width: 70%;
-  }
+/* Shop Page */
+
+/* Blog Page */
+
+/* About Page */
+
+/* Contact Page */
+
+/* Cart Page */
+#cart table {
+  width 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
 }
 
-@media (max-width : 477px) {
-  .section-p1{
-    padding: 20px;
-  }
-  #header{
-    padding: 10px 30px;
-  }
-  h1 {
-    font-size: 38px;
+#cart table img {
+  width: 70px;
 }
-  h2{
-    font-size: 32px;
-  }
-  #hero{
-    padding: 0 20px;
-    background-position: 55%;
-  }
-  #feature{
-    justify-content: space-between;
-  }
-  #feature .fe-box{
-    width: 155px;
-    margin: 0 0 15px 0;
-  }
-  #product1 .pro{
-    width: 100%;
-  }
-  #banner{
-    height: 40vh;
-  }
-  #sm-banner .banner-box{
-    height: 40vh;
-  }
-  #sm-banner .banner-box2{
-    margin-top: 20px;
-  }
-  #banner3{
-    padding: 0 20px;
-  }
-  #banner3 .banner-box{
-    width: 100%;
-  }
-  #newsletter .form{
-    width: 100%;
-  }
-  #newsletter{
-    padding: 40px 20px;
-  }
-  footer .copyright{
-    text-align: start;
-    }
+
+#cart table td:nth-child(1){
+  width: 100px;
+  text-align: center;
+
+}
+#cart table td:nth-child(2){
+  width: 150px;
+  text-align: center;
+}
+#cart table td:nth-child(3){
+  width: 250px;
+  text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+  width: 150px;
+  text-align: center;
 }
