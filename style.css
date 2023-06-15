@@ -100,7 +100,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 80px;
+  padding: 26px 80px;
   background: var(--bgrnd-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   z-index: 999;
@@ -109,19 +109,19 @@ body {
   left: 0;
 }
 
-.navbar{
+#navbar{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.navbar li{
+#navbar li{
   list-style: none;
   padding: 0 20px;
   position: relative;
 }
 
-.navbar li a{
+#navbar li a{
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
@@ -129,13 +129,20 @@ body {
   transition: 0.3s ease;
 }
 
-.navbar li a:hover,
-.navbar li a.active{
+#navbar li a:hover,
+#navbar li a.active{
   color: var(--main-color);
 }
 
-.navbar li a.active::after,
-.navbar li a:hover::after{
++#mobile{
+  display: none;
+  align-items: center;
+}
+#close{
+  display: none;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
   content: "";
   width: 30%;
   height: 2px;
@@ -259,7 +266,6 @@ body {
 
 #product1{
   text-align: center;
-  padding: 80px 80px;
 }
 
 #product1 .product-container{
@@ -335,11 +341,6 @@ body {
   right: 10px;
 }
 
-#product1 .product .cart:hover{
-    background-color: var(--main-color);
-    color: var(--bg-color);
-  }
-
 #banner{
   display: flex;
   flex-direction: column;
@@ -348,10 +349,9 @@ body {
   text-align: center;
   background-image: url(assets/banner1.png);
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   background-size: cover;
   background-position: center;
-  margin-top: 40px;
 }
 
 #banner h4{
@@ -378,7 +378,6 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 40px 80px;
 }
 
 #sm-banner .banner-box{
@@ -469,34 +468,29 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  height: 20vh;
-  margin-top: 55px;
   background-image: url("assets/banner1.png");
   background-repeat: no-repeat;
   background-position: 20% 30%;
-  background-color: var(--main-color);
+  background-color: burlywood;
 }
 #newsletter h4{
   font-size: 22px;
   font-weight: 700;
-  line-height: 2;
-  color: var(--bg-color);
+  color: #fff;
 }
 #newsletter p{
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
-  color: var(--text-color);
+  color: wheat;
 }
 #newsletter p span{
-    font-size: 15px;
-  color: var(--main-color);
-  font-weight: 700;
+  color: rgb(255, 170, 90);
 }
 #newsletter .form{
   display: flex;
   width: 40%;
-
   }
+
 #newsletter input{
   height: 3.125rem;
   padding: 0 1.25rem;
@@ -509,15 +503,14 @@ body {
   border-bottom-left-radius: 0;
 }
 #newsletter button{
-  background-color: var(--main-color);
-  color: var(--text-color);
+  background-color: blue;
+  color: azure;
   white-space: nowrap;
 }
 footer{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 40px 80px;
 }
 footer .col{
   display: flex;
@@ -525,34 +518,33 @@ footer .col{
   align-items: flex-start;
   margin-bottom: 20px;
 }
-footer .logo span{
-    line-height: 2;
+footer .logo{
+margin-bottom: 30px;
 }
 footer h4{
-  font-size: 15px;
+  font-size: 14px;
   padding-bottom: 20px;
 }
 footer p{
-  font-size: 15px;
+  font-size: 13px;
  margin: 0 0 8px 0;
 }
 footer a{
-  font-size: 15px;
+  font-size: 13px;
   text-decoration: none;
-  color: var(--text-color);
- margin-bottom: 10px;
+  color: #222;
+ margin: 10px;
 }
 footer .follow {
  margin-top: 20px;
 }
 footer .follow i{
-    font-size: 22px;
-  color: var(--text-color);
+  color: #403d4d;
   padding-right: 4px;
   cursor: pointer;
 }
 footer .install .row img{
-border: 1px solid var(--main-color);
+border: 1px solid #16c087;
 border-radius: 6px;
 }
 footer .install img{
@@ -560,13 +552,145 @@ margin: 10px 0 15px 0;
 }
 footer .follow i:hover, 
 footer a:hover{
-color: var(--main-color);
+color: #16c087;
 }
 footer .copyright{
 width: 100%;
 text-align: center;
++}
+@media (max-width:799px) {
+  .section-p1{
+    padding: 100px 100px;
+  }
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: var(--bg-color);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 01);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+  #navbar.active{
+    right: 0px;
+  }
+  #navbar li{
+     margin-bottom: 25px;
+  }
+  #mobile{
+    display: flex;
+    align-items: center;
+  }
+  #mobile i{
+    color: black;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  #close{
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+  }
+  #lg-bag{
+    display: none;
+  }
+
+  #hero{
+    height: 70vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+  }
+  #feature{
+    justify-content: center;
+  }
+  #feature .fe-box{
+    margin: 15px 15px;
+  }
+  #product1 .pro-container{
+    justify-content: center;
+  }
+  #product1 .pro{
+    margin: 25px;
+  }
+  #banner{
+    height: 20vh;
+  }
+  #sm-banner .banner-box{
+    min-width: 100%;
+    height: 30vh;
+  }
+  #banner3{
+    padding: 0 40px;
+  }
+  #banner3 .banner-box{
+    width: 28%;
+  }
+  #newsletter .form{
+    width: 70%;
+  }
 }
 
+@media (max-width : 477px) {
+  .section-p1{
+    padding: 20px;
+  }
+  #header{
+    padding: 10px 30px;
+  }
+  h1 {
+    font-size: 38px;
+}
+  h2{
+    font-size: 32px;
+  }
+  #hero{
+    padding: 0 20px;
+    background-position: 55%;
+  }
+  #feature{
+    justify-content: space-between;
+  }
+  #feature .fe-box{
+    width: 155px;
+    margin: 0 0 15px 0;
+  }
+  #product1 .pro{
+    width: 100%;
+  }
+  #banner{
+    height: 40vh;
+  }
+  #sm-banner .banner-box{
+    height: 40vh;
+  }
+  #sm-banner .banner-box2{
+    margin-top: 20px;
+  }
+  #banner3{
+    padding: 0 20px;
+  }
+  #banner3 .banner-box{
+    width: 100%;
+  }
+  #newsletter .form{
+    width: 100%;
+  }
+  #newsletter{
+    padding: 40px 20px;
+  }
+  footer .copyright{
+    text-align: start;
+    }
+}
 /* Shop Page */
 
 /* Blog Page */
