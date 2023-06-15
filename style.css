@@ -100,7 +100,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 26px 80px;
+  padding: 20px 80px;
   background: var(--bgrnd-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   z-index: 999;
@@ -259,6 +259,7 @@ body {
 
 #product1{
   text-align: center;
+  padding: 80px 80px;
 }
 
 #product1 .product-container{
@@ -347,9 +348,10 @@ body {
   text-align: center;
   background-image: url(assets/banner1.png);
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   background-size: cover;
   background-position: center;
+  margin-top: 40px;
 }
 
 #banner h4{
@@ -376,6 +378,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 40px 80px;
 }
 
 #sm-banner .banner-box{
@@ -466,23 +469,28 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  height: 20vh;
+  margin-top: 55px;
   background-image: url("assets/banner1.png");
   background-repeat: no-repeat;
   background-position: 20% 30%;
-  background-color: burlywood;
+  background-color: var(--main-color);
 }
 #newsletter h4{
   font-size: 22px;
   font-weight: 700;
-  color: #fff;
+  line-height: 2;
+  color: var(--bg-color);
 }
 #newsletter p{
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
-  color: wheat;
+  color: var(--text-color);
 }
 #newsletter p span{
-  color: rgb(255, 170, 90);
+    font-size: 15px;
+  color: var(--main-color);
+  font-weight: 700;
 }
 #newsletter .form{
   display: flex;
@@ -501,48 +509,50 @@ body {
   border-bottom-left-radius: 0;
 }
 #newsletter button{
-  background-color: blue;
-  color: azure;
+  background-color: var(--main-color);
+  color: var(--text-color);
   white-space: nowrap;
 }
 footer{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 40px 80px;
 }
-footer col{
+footer .col{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
-footer .logo{
-margin-bottom: 30px;
+footer .logo span{
+    line-height: 2;
 }
 footer h4{
-  font-size: 14px;
+  font-size: 15px;
   padding-bottom: 20px;
 }
 footer p{
-  font-size: 13px;
+  font-size: 15px;
  margin: 0 0 8px 0;
 }
 footer a{
-  font-size: 13px;
+  font-size: 15px;
   text-decoration: none;
-  color: #222;
- margin: 10px;
+  color: var(--text-color);
+ margin-bottom: 10px;
 }
 footer .follow {
  margin-top: 20px;
 }
 footer .follow i{
-  color: #403d4d;
+    font-size: 22px;
+  color: var(--text-color);
   padding-right: 4px;
   cursor: pointer;
 }
 footer .install .row img{
-border: 1px solid #16c087;
+border: 1px solid var(--main-color);
 border-radius: 6px;
 }
 footer .install img{
@@ -550,7 +560,7 @@ margin: 10px 0 15px 0;
 }
 footer .follow i:hover, 
 footer a:hover{
-color: #16c087;
+color: var(--main-color);
 }
 footer .copyright{
 width: 100%;
