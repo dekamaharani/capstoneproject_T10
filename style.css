@@ -798,6 +798,17 @@ footer .copyright {
     line-height: 2;
     color: var(--bg-color);
   }
+  /* Cart Page Media */
+  #cart-add {
+    flex-direction: column;
+  }
+  #coupon {
+    width: 100%;
+  }
+  #subtotal {
+    width: 100%;
+    padding: 20px;
+  }
 }
 
 /* Responsive Gadget */
@@ -856,5 +867,16 @@ footer .copyright {
   }
   footer .copyright {
     text-align: start;
+  }
+  /* Cart Page Media */
+  #cart-add {
+    flex-direction: column;
+  }
+  #coupon {
+    width: 100%;
+  }
+  #subtotal {
+    width: 100%;
+    padding: 20px;
   }
 }
