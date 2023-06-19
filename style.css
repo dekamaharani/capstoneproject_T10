@@ -403,7 +403,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(assets/product4.jpg);
+  background-image: url(Uniqlo/UT\ UTGP\ 2023\ MFA\ Lengan\ Pendek.jpg);
   min-width: 580px;
   height: 50vh;
   background-size: cover;
@@ -411,7 +411,7 @@ body {
   padding: 30px;
 }
 #sm-banner .banner-box2 {
-  background-image: url(assets/product15.jpg)
+  background-image: url(Uniqlo/Jaket\ Parka\ Lapis\ Jersey\ Lembut\ \(Water-Repellent\).jpg);
 }
 #sm-banner h4 {
   color: var(--bg-color);
