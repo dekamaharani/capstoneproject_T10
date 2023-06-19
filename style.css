@@ -403,7 +403,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(assets/banner2.jpg);
+  background-image: url(Uniqlo/UT\ UTGP\ 2023\ MFA\ Lengan\ Pendek.jpg);
   min-width: 580px;
   height: 50vh;
   background-size: cover;
@@ -411,7 +411,7 @@ body {
   padding: 30px;
 }
 #sm-banner .banner-box2 {
-  background-image: url(assets/banner2.jpg);
+  background-image: url(Uniqlo/Jaket\ Parka\ Lapis\ Jersey\ Lembut\ \(Water-Repellent\).jpg);
 }
 #sm-banner h4 {
   color: var(--bg-color);
@@ -444,7 +444,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(assets/banner3.jpeg);
+  background-image: url(Uniqlo/shirt.jpg);
   min-width: 30%;
   height: 30vh;
   background-size: cover;
@@ -453,10 +453,10 @@ body {
   margin-bottom: 20px;
 }
 #banner3 .banner-box2 {
-  background-image: url(assets/banner3.jpeg);
+  background-image: url(Uniqlo/Tas\ Utilitas\ 2WAY.jpg);
 }
 #banner3 .banner-box3 {
-  background-image: url(assets/banner3.jpeg);
+  background-image: url(Uniqlo/Jaket\ Blouson\ Pendek\ Utilitas.jpg);
 }
 #banner3 h2 {
   color: var(--bg-color);
