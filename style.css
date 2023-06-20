@@ -795,6 +795,9 @@ footer .copyright {
   #banner {
     height: 20vh;
   }
+  #banner h2 {
+    font-size: 20px;
+  }
   #sm-banner .banner-box {
     min-width: 100%;
     height: 30vh;
@@ -883,6 +886,9 @@ footer .copyright {
   }
   #banner {
     height: 40vh;
+  }
+  #banner h2 {
+    font-size: 20px;
   }
   #sm-banner .banner-box {
     height: 40vh;
