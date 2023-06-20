@@ -446,7 +446,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(Uniqlo/shirt.jpg);
+  background-image: url(assets/blog1.png);
   min-width: 30%;
   height: 30vh;
   background-size: cover;
@@ -455,10 +455,10 @@ body {
   margin-bottom: 20px;
 }
 #banner3 .banner-box2 {
-  background-image: url(Uniqlo/Tas\ Utilitas\ 2WAY.jpg);
+  background-image: url(assets/blog5.png);
 }
 #banner3 .banner-box3 {
-  background-image: url(Uniqlo/Jaket\ Blouson\ Pendek\ Utilitas.jpg);
+  background-image: url(assets/blog6.png);
 }
 #banner3 h2 {
   color: var(--bg-color);
@@ -467,7 +467,7 @@ body {
   line-height: 1.5;
 }
 #banner3 h3 {
-  color: var(--text-color);
+  color: var(--bg-color);
   font-weight: 800;
   font-size: 14px;
 }
