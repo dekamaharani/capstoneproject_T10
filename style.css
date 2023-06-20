@@ -100,7 +100,7 @@ body {
 
 /* Header Start */
 .logo {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--text-color);
 }
@@ -415,12 +415,12 @@ body {
 }
 #sm-banner h4 {
   color: var(--bg-color);
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
 }
 #sm-banner h2 {
   color: var(--bg-color);
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 800;
 }
 #sm-banner span {
@@ -461,13 +461,13 @@ body {
 #banner3 h2 {
   color: var(--bg-color);
   font-weight: 900;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.5;
 }
 #banner3 h3 {
   color: var(--text-color);
   font-weight: 800;
-  font-size: 15px;
+  font-size: 14px;
 }
 #newsletter {
   display: flex;
