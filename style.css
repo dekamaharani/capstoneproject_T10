@@ -84,6 +84,18 @@ button.white {
   outline: none;
   transition: 0.2s;
 }
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 20px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
 body {
   width: 100%;
 }
@@ -480,9 +492,6 @@ body {
   font-weight: 600;
   color: wheat;
 }
-#newsletter p span {
-  color: rgb(255, 170, 90);
-}
 #newsletter .form {
   display: flex;
   width: 40%;
@@ -499,9 +508,11 @@ body {
   border-bottom-left-radius: 0;
 }
 #newsletter button {
-  background-color: blue;
   color: azure;
   white-space: nowrap;
+}
+#newsletter button:hover{
+  color: var(--bg-color);
 }
 #newsletter {
   display: flex;
