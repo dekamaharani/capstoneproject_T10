@@ -8,10 +8,11 @@
 
 /* Variables */
 :root {
-  --main-color: #b19975;
-  --text-color: #403d4d;
+  --main-color: #756753;
+  --text-color: #292219;
   --bg-color: #ffff;
   --bgrnd-color: #c1c0bc;
+  --bgrnd2-color:#979793;
 }
 html {
   scroll-behavior: smooth;
@@ -42,6 +43,7 @@ p {
 }
 .section-p1 {
   padding: 40px 90px;
+  line-height: 2;
 }
 .section-m1 {
   margin: 40px 0;
@@ -65,18 +67,6 @@ button.more {
   padding: 12px 20px;
   color: var(--text-color);
   background-color: var(--bgrnd-color);
-  border-radius: 5px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  transition: 0.2s;
-}
-button.normal {
-  font-size: 14px;
-  font-weight: 600;
-  padding: 12px 20px;
-  color: var(--text-color);
-  background-color: var(--bg-color);
   border-radius: 5px;
   cursor: pointer;
   border: none;
@@ -112,7 +102,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px 80px;
-  background: var(--bgrnd-color);
+  background: var(--bgrnd2-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   z-index: 999;
   position: sticky;
@@ -136,8 +126,7 @@ body {
   color: var(--text-color);
   transition: 0.3s ease;
 }
-#navbar li a:hover,
-#navbar li a.active {
+#navbar li a:hover {
   color: var(--main-color);
 }
 #mobile {
@@ -295,6 +284,7 @@ body {
 #product1 {
   text-align: center;
   padding: 80px 80px;
+  line-height: 2;
 }
 #product1 .product-container {
   display: flex;
